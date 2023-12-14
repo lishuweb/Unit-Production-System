@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Reggae+One&display=swap');
+body{
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+
+.container 
+{
+    /* border: 5px solid; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* position: relative; */
+    display: inline-block;
+}
+.container img{
+    filter: blur(8px);
+    margin: auto;
+    -webkit-filter: blur(8px);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+}
+
+.container .bg-text
+{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid #5DADE2;
+    border-radius: 3px;
+    height: 350px;
+    width: 600px;
+}
+
+.container .bg-text .sign:hover
+{
+    cursor: pointer;
+    color: red;
+    transition: .3s;
+}
+
+
+
