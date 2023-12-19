@@ -15,5 +15,24 @@ model Signin{
   email String  @unique
   name  String
   password String
-  profile String? 
+}
+
+model Hoodie{
+  id    Int     @id @default(autoincrement())
+  size  String
+  meterSquare   String
+  
+}
+
+model Product {
+ id          Int       @id @default(autoincrement())
+ productName String
+ fabric      String
+ weight      Float
+ meterSquare Float
+ color       String
+ date        DateTime @default(now())
+ size        String[]
+ perSize     Float    
+ 
 }

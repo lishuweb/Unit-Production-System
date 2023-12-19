@@ -1,22 +1,26 @@
 import React from "react";
-// import Login from "./components/Login";
+import Login from "./components/Login";
 import Signin from "./components/Signin";
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route,
-//   Link
-// } from "react-router-dom";
+import Create from "./components/Create";
+import ManageProduct from "./components/ManageProduct";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 
 const App = () => {
   return (
-    <Signin />
-  //   <Router>
-  //     <Switch>
-  //       <Route exact path = "/"><Login/></Route>
-  //       {/* <Route path = "/signin"><Signin/></Route> */}
-  //     </Switch>
-  //  </Router>
+    <BrowserRouter>
+      <Routes>
+        
+        <Route path='/signin' element = {<Signin />} />
+        <Route path='/login' element = {<Login />} />
+        <Route path='/create' element = {<Create />} />
+        <Route path='/manage' element = {<ManageProduct />} />
+      </Routes>
+    </BrowserRouter>
   )
 };
 
