@@ -10,9 +10,11 @@ body{
 
 .container
 {
-    justify-content: center;
+    background: gray;
     align-items: center;
+    justify-content: center;
     text-align: center;
+    margin: auto;
 }
 
 .container h1 
@@ -20,10 +22,33 @@ body{
     margin-top: 30px;
 }
 
-.container table 
+.container .tableDetails 
 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: blueviolet;
+    /* margin-left: auto;
+    margin-right: auto; */
+    display: flex;
+}
+
+.container .tableDetails .insideTable
+{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     background-color: red;
+}
+
+.container .tableDetails .insideTable th,
+.container .tableDetails .insideTable td
+{
+    padding: 0 20px;
+}
+
+.container .tableDetails .insideTable td
+{
+    background-color: aquamarine;
+    margin: 20px;
 }

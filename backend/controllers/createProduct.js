@@ -17,7 +17,7 @@ app.get('/getOne', async(request, response) => {
         take:1
     });
     response.json(getVal);
-})
+});
 app.post('/pro', async (request, response) => {
     const {productName, fabric, color, size} = request.body;
     const weight = parseFloat(request.body.weight);
